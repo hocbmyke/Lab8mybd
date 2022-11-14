@@ -8,9 +8,9 @@ if (mysqli_connect_errno()) {
     exit;
 }
 
-$pib = $_POST['name']; $gr = $_POST['id'];
+$name = $_POST['name']; $id = $_POST['id'];
 
-$sql = "INSERT INTO platform (GenreName, GenreId) VALUES ('$name', '$id' )";
+$sql = "INSERT INTO platform (PlatformName, PlatformId) VALUES ('$name', '$id' )";
 
 
 if($mysqli->query($sql)){
@@ -26,5 +26,5 @@ else
 /*Закриваємо з'єднання*/
 $mysqli->close();
 
-include("showPlatform.php")
+include("showPlatforms.php")
 ?>

@@ -8,15 +8,13 @@ if (mysqli_connect_errno()) {
     exit;
 }
 
+$name = $_POST['name']; $id = $_POST['id'];
 
-$id = $_POST['id'];
-$name = $_POST['name'];
-
-$sql = "UPDATE platform SET PlatformName='$name' WHERE PlatformId='$id'";
+$sql = "INSERT INTO developer (Devname, Devid) VALUES ('$name', '$id' )";
 
 
 if($mysqli->query($sql)){
-    echo "Рядок змінено успішно";
+    echo "Рядок вставлено успішно";
     }
 else
     {
@@ -28,5 +26,5 @@ else
 /*Закриваємо з'єднання*/
 $mysqli->close();
 
-include("showPlatforms.php")
+include("showDevelopers.php")
 ?>

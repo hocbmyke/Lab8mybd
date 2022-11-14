@@ -12,7 +12,7 @@ if (mysqli_connect_errno()) {
 $id = $_POST['id'];
 
 
-$sql = "DELETE FROM genres WHERE id='$id'";
+$sql = "DELETE FROM genres WHERE GenreId='$id'";
 
 
 if($mysqli->query($sql)){

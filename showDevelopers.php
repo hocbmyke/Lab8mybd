@@ -40,6 +40,12 @@
 
     <br><br><br>
 
+	<ul>
+        <li><a href="insertIntoDevelopForm.php">Додати рядок з жанром</a><br></li>
+        <li><a href="updateDevelopForm.php">Змінити рядок</a><br></li>
+        <li><a href="deleteFromDevelopForm.php">Видалити рядок</a><br></li>
+    </ul>
+
     <ul>
         <li><a href="index.html">На головну</a><br></li>
     </ul>

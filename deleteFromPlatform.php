@@ -11,8 +11,8 @@ if (mysqli_connect_errno()) {
 
 $id = $_POST['id'];
 
-
-$sql = "DELETE FROM platform WHERE id='$id'";
+			
+$sql = "DELETE FROM platform WHERE PlatformId=\"$id\"";
 
 
 if($mysqli->query($sql)){
@@ -28,5 +28,5 @@ else
 /*Закриваємо з'єднання*/
 $mysqli->close();
 
-include("showPlatform.php")
+include("showPlatforms.php")
 ?>

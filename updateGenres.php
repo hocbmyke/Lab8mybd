@@ -12,7 +12,7 @@ if (mysqli_connect_errno()) {
 $id = $_POST['id'];
 $name = $_POST['name'];
 
-$sql = "UPDATE genre SET GenreName='$name', GenreId='$id'";
+$sql = "UPDATE genre SET GenreName='$name' WHERE GenreId='$id'";
 
 
 if($mysqli->query($sql)){

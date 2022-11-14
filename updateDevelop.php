@@ -12,7 +12,7 @@ if (mysqli_connect_errno()) {
 $id = $_POST['id'];
 $name = $_POST['name'];
 
-$sql = "UPDATE platform SET PlatformName='$name' WHERE PlatformId='$id'";
+$sql = "UPDATE developer SET Devname='$name' WHERE Devid='$id'";
 
 
 if($mysqli->query($sql)){
@@ -28,5 +28,5 @@ else
 /*Закриваємо з'єднання*/
 $mysqli->close();
 
-include("showPlatforms.php")
+include("showDevelopers.php")
 ?>

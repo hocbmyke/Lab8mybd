@@ -10,13 +10,13 @@ if (mysqli_connect_errno()) {
 
 
 $id = $_POST['id'];
-$name = $_POST['name'];
 
-$sql = "UPDATE platform SET PlatformName='$name' WHERE PlatformId='$id'";
+			
+$sql = "DELETE FROM developer WHERE Devid=\"$id\"";
 
 
 if($mysqli->query($sql)){
-    echo "Рядок змінено успішно";
+    echo "Рядок видалено успішно";
     }
 else
     {
@@ -28,5 +28,5 @@ else
 /*Закриваємо з'єднання*/
 $mysqli->close();
 
-include("showPlatforms.php")
+include("showDevelopers.php")
 ?>
