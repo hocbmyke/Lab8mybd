@@ -8,9 +8,9 @@ if (mysqli_connect_errno()) {
     exit;
 }
 
-$name = $_POST['name']; $id = $_POST['id'];
+$name = $_POST['name']; ;
 
-$sql = "INSERT INTO genre VALUES ('$name', '$id' )";
+$sql = "INSERT INTO genre(GenreName) VALUES ('$name')";
 
 
 if($mysqli->query($sql)){

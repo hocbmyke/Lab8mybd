@@ -13,9 +13,9 @@
     ?>
 
     <form action="insertIntoGames.php" method="post">
+		<h3>Вставте назву гри</h3>
         <label>Назва гри</label><input name="name" type="text"><br>
-        <label>ІД гри</label><input name="id" type="text"><br>
-        <input type="submit" value="Вставити рядок">
+		<input type="submit" value="Вставити рядок">
     </form>
 
 </body>

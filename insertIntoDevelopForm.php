@@ -14,7 +14,6 @@
 
     <form action="insertIntoDevelop.php" method="post">
         <label>Назва розробника</label><input name="name" type="text"><br>
-        <label>ІД розробника</label><input name="id" type="text"><br>
         <input type="submit" value="Вставити рядок">
     </form>
 

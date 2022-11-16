@@ -10,7 +10,7 @@ if (mysqli_connect_errno()) {
 
 $name = $_POST['name']; $id = $_POST['id'];
 
-$sql = "INSERT INTO developer (Devname, Devid) VALUES ('$name', '$id' )";
+$sql = "INSERT INTO developer (Devname) VALUES ('$name')";
 
 
 if($mysqli->query($sql)){

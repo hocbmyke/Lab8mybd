@@ -8,9 +8,9 @@ if (mysqli_connect_errno()) {
     exit;
 }
 
-$name = $_POST['name']; $id = $_POST['id'];
+$name = $_POST['name'];
 
-$sql = "INSERT INTO game (GameName, GameId) VALUES ('$name', '$id' )";
+$sql = "INSERT INTO game (GameName) VALUES ('$name') ";
 
 
 if($mysqli->query($sql)){

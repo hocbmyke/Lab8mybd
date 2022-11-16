@@ -14,7 +14,6 @@
 
     <form action="insertIntoGenres.php" method="post">
         <label>Назва жанру</label><input name="name" type="text"><br>
-        <label>ІД жанру</label><input name="id" type="text"><br>
         <input type="submit" value="Вставити рядок">
     </form>
 
